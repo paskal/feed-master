@@ -17,8 +17,13 @@ Pulls multiple podcast feeds (RSS) and republishes as a common feed, properly so
 | feed             | FM_FEED           |                 | single feed, overrides config             |
 | update-interval  | UPDATE_INTERVAL   | `1m`            | update interval, overrides config         |
 | telegram_chan    | TELEGRAM_CHAN     |                 | single telegram channel, overrides config |
-| telegram_token   | TELEGRAM_TOKEN    |                 | telegram token           |
-| telegram_timeout | TELEGRAM_TIMEOUT  | `1m`            | telegram timeout         |
+| telegram_token   | TELEGRAM_TOKEN    |                 | telegram token                            |
+| telegram_server  | TELEGRAM_SERVER   | `149.154.167.50:443` | telegram API server from https://my.telegram.org/apps |
+| telegram_public_keys | TELEGRAM_PUBLIC_KEYS  | `/srv/etc/tg_public_keys.pem` | telegram public keys file location |
+| telegram_session_file | TELEGRAM_SESSION_FILE | `/srv/var/session.json` | telegram sessions file location |
+| telegram_app_id  | TELEGRAM_APP_ID   |                 | telegram app ID from https://my.telegram.org/apps |
+| telegram_app_hash | TELEGRAM_APP_HASH |                | telegram hash from https://my.telegram.org/apps |
+| telegram_only_message| TELEGRAM_ONLY_MESSAGE |         | don't send audio files to telegram, only text |
 | consumer-key     | TWI_CONSUMER_KEY  |                 | twitter consumer key     |
 | consumer-secret  | TWI_CONSUMER_SECRET |               | twitter consumer secret  |
 | access-token     | TWI_ACCESS_TOKEN  |                 | twitter access token     |
